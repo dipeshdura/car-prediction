@@ -5,9 +5,19 @@
 import pandas as pd
 import numpy as np
 
+
+import pandas as pd
+import streamlit as st
+
+
+
+# Read the CSV into a DataFrame
+df = pd.read_csv('vehicles.csv')
+
+
+
 # Load data
-# df =pd.read_csv('vehicles.csv')
-df = pd.read_csv(r'C:\Users\dipes\Downloads\aiproject\vehicles.csv')
+
 
 # Drop irrelevant columns
 cols_to_drop = ['id', 'url', 'region_url', 'image_url', 'description', 'county']
